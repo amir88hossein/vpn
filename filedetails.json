@@ -4,7 +4,7 @@
   
 dev tun
 proto tcp
-remote 219.100.37.187 443
+remote 219.100.37.8 443
 cipher AES-128-CBC
 auth SHA1
 resolv-retry infinite
@@ -53,6 +53,15 @@ jjxDah2nGN59PRbxYvnKkKj9
 </ca>
 
 
+###############################################################################
+# The client certificate file (dummy).
+# 
+# In some implementations of OpenVPN Client software
+# (for example: OpenVPN Client for iOS),
+# a pair of client certificate and private key must be included on the
+# configuration file due to the limitation of the client.
+# So this sample configuration file has a dummy pair of client certificate
+# and private key as follows.
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -105,7 +114,6 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
-
 
   "},
   {"id":1,"file":"
